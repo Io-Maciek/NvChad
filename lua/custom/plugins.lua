@@ -4,6 +4,10 @@ local plugins = {
     opts={
       ensure_installed = {
         "rust-analyzer",
+        "black",
+        "mypy",
+        "ruff",
+        "pyright",
       },
     },
   },
@@ -13,6 +17,13 @@ local plugins = {
       require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
     end
+  },
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    ft = {"python"},
+    opts = function ()
+      return require "custom.configs.null-ls"
+    end,
   },
   {
     "rust-lang/rust.vim",

@@ -7,12 +7,12 @@ M.file = {
       "Save current file"
     },
     ["C-S-s"] ={
-      "<cmd> wa <CR>",
+      "<cmd> w a <CR>",
       "Save all open files"
     },
   }
 }
-
+--
 
 M.crates = {
   n = {
