@@ -1,14 +1,14 @@
-local M = {}
+ local M = {}
 
 M.file = {
   n = {
-    ['C-s'] = {
-      "<cmd> w <CR>",
+    ['<C-s>'] = {
+      "<cmd>w<CR>",
       "Save current file"
     },
-    ["C-S-s"] ={
-      "<cmd> w a <CR>",
-      "Save all open files"
+    ["<leader>s"] ={
+      "<cmd>wa<CR>",
+      "Save all open files2"
     },
   }
 }
@@ -24,5 +24,4 @@ M.crates = {
     }
   }
 }
-
 return M
