@@ -8,13 +8,29 @@ M.file = {
     },
     ["<leader>s"] ={
       "<cmd>wa<CR>",
-      "Save all open files2"
+      "Save all modified files"
     },
   }
 }
 --
+M.editing = {
+   n = {
+     ['<C-l>'] = {
+       "o<Esc>",
+       "Add empty line below"
+     },
+     ['<S-l>'] = {
+       "O<Esc>",
+       "Add empty line above"
+     },
+     ['<leader>d'] = {
+       "Y p",
+       "Copy current line below"
+     }
+   }
+ }
 
-M.crates = {
+M.rust_lang = {
   n = {
     ["<leader>rcu"] = {
       function()

@@ -8,3 +8,5 @@ lspconfig.pyright.setup({
   capabilities = capabilities,
   filetypes = {"python"},
 })
+
+--lspconfig.lua_ls.setup{}
